@@ -1,15 +1,65 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Work</title>
-   </head>
-   <body>
-      <h1>Getting started with django</h1>
-      <h2>This is the root template</h2>
-
-      {% for project in projects%}
-      <p>{{project.id}}</p>
-      <p> {{project.title}}</p>
-      {% endfor%}
-   </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Application</title>
+    <style>
+        /* Add your custom styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Project Management Application</h1>
+        <p>Manage your projects and tasks efficiently with our intuitive platform.</p>
+        
+        <!-- Project Overview Section -->
+        <section id="project-overview">
+            <h2>Project Overview</h2>
+            <p>Our project management application is designed to streamline your project management process. Here are some key features:</p>
+            <ul>
+                <li>Track project progress</li>
+                <li>Manage tasks and deadlines</li>
+                <li>Collaborate with team members</li>
+                <li>Generate reports and insights</li>
+            </ul>
+            <p>With our application, you can stay organized and focused on achieving your project goals.</p>
+        </section>
+        
+        <!-- About Me Section (Optional) -->
+        <section id="about-me">
+            <h2>About Me</h2>
+            <p>Hi, I'm Jackson Ndiritu from Nairobi,Kenya, the developer behind this project. I'm passionate about creating innovative solutions to simplify complex tasks. With a background in Software Engineering-backend option, I strive to deliver high-quality software that meets the needs of users.</p>
+        </section>
+        
+        <!-- Links Section -->
+        <section id="links">
+            <h2>Explore Further</h2>
+            <p>Ready to get started? Check out our project and connect with me!</p>
+            <ul>
+                <li><a href="link-to-deployed-app" target="_blank">View Deployed App</a></li>
+                <li><a href="link-to-github-repo" target="_blank">GitHub Repository</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
 </html>
+
