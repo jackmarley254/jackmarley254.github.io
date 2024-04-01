@@ -1,0 +1,1 @@
+This project holds significant importance within the context of my journey at Holberton School. Developed as part of my Portfolio Project, it represents a culmination of the skills, knowledge, and creativity acquired throughout my learning experience. 
