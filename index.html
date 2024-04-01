@@ -10,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #E9967A;
+            background-color: #f4f4f4;
         }
         .container {
             max-width: 800px;
@@ -19,45 +19,128 @@
             text-align: center;
         }
         h1 {
-            color: #ADFF2F;
+            color: #333;
         }
         p {
             color: #666;
+        }
+        .cover-image {
+            width: 100%;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+        .header-bar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .header-bar a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        .header-bar a:hover {
+            color: #00bcd4;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #00bcd4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #008ba3;
+        }
+        .feature {
+            margin-bottom: 40px;
+        }
+        .feature img {
+            max-width: 100%;
+        }
+        .feature h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .feature p {
+            color: #666;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+            overflow: hidden;
+            margin-top: 40px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Our Project Management Application</h1>
-        <p>Manage your projects and tasks efficiently with our intuitive platform.</p>
-        
-        <!-- Project Overview Section -->
-        <section id="project-overview">
-            <h2>Project Overview</h2>
-            <p>Our project management application is designed to streamline your project management process. Here are some key features:</p>
-            <ul>
-                <li>Track project progress</li>
-                <li>Manage tasks and deadlines</li>
-                <li>Collaborate with team members</li>
-                <li>Generate reports and insights</li>
-            </ul>
-            <p>With our application, you can stay organized and focused on achieving your project goals.</p>
+        <!-- Intro Section -->
+        <section id="intro">
+            <img src="cover-image.jpg" alt="Project Cover Image" class="cover-image">
+            <h1>Project Management Application</h1>
+            <p>Manage your projects and tasks efficiently with our intuitive platform.</p>
+            <div class="header-bar">
+                <a href="#project-overview">Project Overview</a>
+                <a href="#about-me">About Me</a>
+            </div>
+            <a href="link-to-deployed-app" class="button" target="_blank">View Deployed App</a>
         </section>
         
-        <!-- About Me Section (Optional) -->
-        <section id="about-me">
-            <h2>About Me</h2>
-            <p>Hi, I'm Jackson Ndiritu from Nairobi,Kenya, the developer behind this project. I'm passionate about creating innovative solutions to simplify complex tasks. With a background in Software Engineering-backend option, I strive to deliver high-quality software that meets the needs of users.</p>
+        <!-- Feature Section -->
+        <section id="features">
+            <h2>Key Features</h2>
+            <div class="feature">
+                <img src="feature1-image.jpg" "feature4-image.jpg" alt="Feature 1&4 Image">
+                <h3>Task Management</h3>
+                <p>Easily create, assign, and track tasks to keep your projects organized and on track.</p>
+            </div>
+            <div class="feature">
+                <img src="feature2-image.jpg" alt="Feature 2 Image">
+                <h3>Project Collaboration</h3>
+                <p>Collaborate with team members in real-time, share files, and communicate effectively within the platform.</p>
+            </div>
+            <div class="feature">
+                <img src="feature3-image.jpg" alt="Feature 3 Image">
+                <h3>Reporting and Insights</h3>
+                <p>Gain valuable insights into project progress, performance, and resource utilization through detailed reports and analytics.</p>
+            </div>
         </section>
         
-        <!-- Links Section -->
-        <section id="links">
-            <h2>Explore Further</h2>
-            <p>Ready to get started? Check out our project and connect with me!</p>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About This Project</h2>
+            <p>This project was inspired by a personal need to streamline and enhance the organization and efficiency of project management processes. As an individual passionate about productivity and efficiency, I often found myself struggling to keep track of tasks, deadlines, and project progress across various endeavors.As a student at Holberton School, the journey of mastering software engineering principles and practices has been both exhilarating and demanding. Throughout my curriculum, I've been exposed to various project management methodologies and tools.This project holds significant importance within the context of my journey at Holberton School. Developed as part of my Portfolio Project, it represents a culmination of the skills, knowledge, and creativity acquired throughout my learning experience. </p>
+            <p>Explore the profiles of our team members:</p>
             <ul>
-                <li><a href="link-to-deployed-app" target="_blank">View Deployed App</a></li>
-                <li><a href="link-to-github-repo" target="_blank">GitHub Repository</a></li>
+                <li><a href="https://www.linkedin.com/in/jackson-gitahi/" target="_blank">Member 1 - LinkedIn</a></li>
+                <li><a href="https://github.com/jackmarley254" target="_blank">Member 1 - GitHub</a></li>
+                <li><a href="https://twitter.com/ndiritu_jack" target="_blank">Member 1 - Twitter</a></li>
+                <!-- Add similar links for other team members -->
             </ul>
+            <p>View the project on GitHub: <a href="https://github.com/jackmarley254/django_project_management_app" target="_blank">GitHub Repository</a></p>
+        </section>
+        
+        <!-- Video Section -->
+        <section id="video">
+            <h2>Project Demo Video</h2>
+            <div class="video-container">
+                <!-- Embed your video here -->
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/TfSKzMNv2GA?si=4uy9ejaYU3uTXrP9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p>Watch the video to meet our team, learn about the project inspiration, explore key features, and discover what's next for our project!</p>
         </section>
     </div>
 </body>
